@@ -14,6 +14,7 @@ import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.ArrowForward
 import androidx.compose.material.icons.filled.Menu
 import androidx.compose.material.icons.filled.Notifications
 import androidx.compose.material.icons.filled.Search
@@ -47,6 +48,7 @@ import androidx.compose.ui.unit.sp
 import androidx.navigation.NavController
 import androidx.navigation.compose.rememberNavController
 import com.mitchelle.swaggy.R
+import com.mitchelle.swaggy.navigation.ROUT_CATEGORY
 import com.mitchelle.swaggy.ui.theme.lightlight
 import com.mitchelle.swaggy.ui.theme.mishmish
 
@@ -87,9 +89,11 @@ fun ItemScreen(navController: NavController){
 
                 }
 
-                IconButton(onClick = {}) {
+                IconButton(onClick = {
+                    navController.navigate(ROUT_CATEGORY)
+                }) {
                     Icon(
-                        imageVector = Icons.Default.Notifications,
+                        imageVector = Icons.Default.ArrowForward,
                         contentDescription = "notification"
                     )
 

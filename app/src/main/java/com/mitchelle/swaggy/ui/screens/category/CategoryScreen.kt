@@ -39,6 +39,7 @@ import androidx.compose.ui.unit.sp
 import androidx.navigation.NavController
 import androidx.navigation.compose.rememberNavController
 import com.mitchelle.swaggy.R
+import com.mitchelle.swaggy.navigation.ROUT_DETAIL
 import com.mitchelle.swaggy.navigation.ROUT_ITEM
 import com.mitchelle.swaggy.ui.theme.mishmish
 
@@ -227,7 +228,7 @@ fun CategoryScreen(navController: NavController){
 
         Button(
             onClick = {
-                navController.navigate(ROUT_ITEM)
+                navController.navigate(ROUT_DETAIL)
             },
             colors = ButtonDefaults.buttonColors(mishmish),
             shape = RoundedCornerShape(10.dp),

@@ -11,6 +11,7 @@ import com.mitchelle.swaggy.ui.screens.category.CategoryScreen
 import com.mitchelle.swaggy.ui.screens.contact.ContactScreen
 import com.mitchelle.swaggy.ui.screens.detail.DetailScreen
 import com.mitchelle.swaggy.ui.screens.home.HomeScreen
+import com.mitchelle.swaggy.ui.screens.intents.IntentScreen
 import com.mitchelle.swaggy.ui.screens.item.ItemScreen
 import com.mitchelle.swaggy.ui.screens.scaffold.ScaffoldScreen
 
@@ -52,6 +53,9 @@ fun AppNavHost(
         }
         composable(ROUT_DETAIL) {
             DetailScreen(navController)
+        }
+        composable(ROUT_INTENT) {
+            IntentScreen(navController)
         }
 
     }

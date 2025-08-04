@@ -9,7 +9,10 @@ import androidx.navigation.compose.rememberNavController
 import com.mitchelle.swaggy.ui.screens.about.AboutScreen
 import com.mitchelle.swaggy.ui.screens.category.CategoryScreen
 import com.mitchelle.swaggy.ui.screens.contact.ContactScreen
+import com.mitchelle.swaggy.ui.screens.dashboard.DashboardScreen
+import com.mitchelle.swaggy.ui.screens.dashboard.DashboardScreen2
 import com.mitchelle.swaggy.ui.screens.detail.DetailScreen
+import com.mitchelle.swaggy.ui.screens.form.FormScreen
 import com.mitchelle.swaggy.ui.screens.home.HomeScreen
 import com.mitchelle.swaggy.ui.screens.intents.IntentScreen
 import com.mitchelle.swaggy.ui.screens.item.ItemScreen
@@ -56,6 +59,15 @@ fun AppNavHost(
         }
         composable(ROUT_INTENT) {
             IntentScreen(navController)
+        }
+        composable(ROUT_DASHBOARD) {
+            DashboardScreen(navController)
+        }
+        composable(ROUT_DASHBOARD2) {
+            DashboardScreen2(navController)
+        }
+        composable(ROUT_FORM) {
+            FormScreen(navController)
         }
 
     }

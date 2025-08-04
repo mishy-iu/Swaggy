@@ -13,3 +13,7 @@ val mishmish = Color(0xFF4CAF65)
 val lightlight = Color(0xFF6DB3BD)
 val white = Color(0xFF9DC4D5)
 val elegant = Color(0xFFD95329)
+val turqmish = Color(0xFF64FFDA)
+val newgreen = Color(0xFF105B49)
+val merl = Color(0xFF19CB4B)
+

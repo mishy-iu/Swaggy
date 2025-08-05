@@ -35,6 +35,7 @@ import com.airbnb.lottie.compose.animateLottieCompositionAsState
 import com.airbnb.lottie.compose.rememberLottieComposition
 import com.mitchelle.swaggy.R
 import com.mitchelle.swaggy.navigation.ROUT_HOME
+import com.mitchelle.swaggy.navigation.ROUT_LOGIN
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 
@@ -46,7 +47,7 @@ fun SplashScreen(navController: NavController){
     val coroutine = rememberCoroutineScope()
     coroutine.launch {
         delay(2000)
-        navController.navigate(ROUT_HOME)
+        navController.navigate(ROUT_LOGIN)
     }
     Column(
         modifier = Modifier.fillMaxSize(),

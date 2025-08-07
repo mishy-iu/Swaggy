@@ -25,8 +25,10 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.navigation.NavController
 import com.mitchelle.swaggy.R
+import com.mitchelle.swaggy.navigation.ROUT_ADD_PRODUCT
 import com.mitchelle.swaggy.navigation.ROUT_DASHBOARD2
 import com.mitchelle.swaggy.navigation.ROUT_HOME
+import com.mitchelle.swaggy.navigation.ROUT_PRODUCT_LIST
 import com.mitchelle.swaggy.navigation.ROUT_REGISTER
 import com.mitchelle.swaggy.viewmodel.AuthViewModel
 
@@ -48,10 +50,10 @@ fun LoginScreen(
             if (user == null) {
                 Toast.makeText(context, "Invalid Credentials", Toast.LENGTH_SHORT).show()
             } else {
-                if (user.role == "Buyer") {
-                    navController.navigate(ROUT_DASHBOARD2)
+                if (user.role == "Admin") {
+                    navController.navigate(ROUT_ADD_PRODUCT)
                 } else {
-                    navController.navigate(ROUT_HOME)
+                    navController.navigate(ROUT_PRODUCT_LIST)
                 }
             }
         }

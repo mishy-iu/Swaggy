@@ -61,7 +61,7 @@ fun RegisterScreen(
             .fillMaxSize()
             .background(
                 brush = Brush.verticalGradient(
-                    listOf(Color(0xFF29CEE5), Color(0xFF374AB0))
+                    listOf(Color(0xFF50EAC5), Color(0xFFE0E4F6))
                 )
             )
             .padding(16.dp),
@@ -205,7 +205,7 @@ fun RegisterScreen(
                     .height(50.dp)
                     .background(
                         brush = Brush.horizontalGradient(
-                            colors = listOf(Color(0xFF11C56D), Color(0xFF0072FF))
+                            colors = listOf(Color(0xFF12F8F8), Color(0xFFC8E7FD))
                         ),
                         shape = MaterialTheme.shapes.medium
                     ),
@@ -243,7 +243,7 @@ fun RegisterScreen(
             TextButton(
                 onClick = { navController.navigate(ROUT_LOGIN) }
             ) {
-                Text("Already have an account? Login", color = Color(0xFF2993C2))
+                Text("Already have an account? Login", color = Color(0xFF34D9D9))
             }
         }
     }
